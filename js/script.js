@@ -132,16 +132,64 @@
 
   $(function () { 
 
+      $('#left').click(function ()  {
+        $('.box').animate({
+            left: "-=40px",
+            fontSize: "+=2px"
+        }, function() {
+            //animation is complete
+        });  
+      });
+        
+       $('#up').click(function ()  {
+        $('.box').animate({
+            top: "-=40px",
+            opacity: "+=0.1"
+        }, function() {
+            //animation is complete
+        });  
+      });
+       $('#right').click(function ()  {
+        $('.box').animate({
+            left: "+=40px",
+            fontSize: "-=2px"
+        }, function() {
+            //animation is complete
+        });  
+      });
+       $('#down').click(function ()  {
+        $('.box').animate({
+            top: "+=40px",
+            opacity: "-=0.1px"
+        }, function() {
+            //animation is complete
+        });  
+      });
 
 
 });
 
 
+/*******************
+* jQuery CSS
+******************* */
 
-
-
-
-
+  $(function () { 
+        //for one style
+      //$('#circle2').css('background','#8a8d22');
+        
+        //for multiply styles
+      $('#circle2').css({ 
+          'background':'#8a8d22',
+          'display': 'inline-block', 
+          'color': 'white',
+          'text-align': 'center', 
+          'line-height': '140px',
+          'height': '140px',
+          'width': '140px'}).addClass('circleShape');;
+     
+      
+  });
 
 
 
