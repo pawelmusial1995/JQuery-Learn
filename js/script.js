@@ -42,43 +42,110 @@
     ********************* */
     
     //click method
-   $(function () { 
+  // $(function () { 
        
        //po kliknieciu wywoluje tekst
        
-    $('#box').click(function(){
-    alert('you just clicked a box');
-    });
+   // $('#box').click(function(){
+   // alert('you just clicked a box');
+   // });
     
        //po nie wpisaniu niuczego wyswietli sie alert czy nie zapomniales wpisac tekstu ?
-    $('input').blur(function(){
+  //  $('input').blur(function(){
         
-      if($(this).val() == ""    ) {
-         $(this).css('border', 'solid 1px red');
-          $('#box').text('Forgot to add a text?');
-         }  
-    });
+   //   if($(this).val() == ""    ) {
+      //   $(this).css('border', 'solid 1px red');
+      //    $('#box').text('Forgot to add a text?');
+      //   }  
+   // });
     
   
-       $('input').keydown(function(){
+      // $('input').keydown(function(){
                       //jesli argument input jest pusty 
-            if($(this).val() !== "" ) {
-                $(this).css('border', 'solid 1px #777');
-                $('#box').text('Thanks for that');
+     //       if($(this).val() !== "" ) {
+      //          $(this).css('border', 'solid 1px #777');
+      //          $('#box').text('Thanks for that');
            
-                    };              
-            
+//};              
+          
                           
-                        });
+                  //      });
        
        // po najechaniu na element zmienia tekst "najechałes"
-      $('#box').hover(function() {
+ //     $('#box').hover(function() {
           
-         $(this).text('you hovered in!'); 
+ //        $(this).text('you hovered in!'); 
           
-      }, function() {
-           $(this).text('you hovered out!'); 
-      } ) ;
+   //   }, function() {
+ //          $(this).text('you hovered out!'); 
+    //  } ) ;
     
+//});
+
+/**************
+* jQUeryy CHAINING
+***************** */
+
+//zsuwa sie nadu pasek
+
+     
+ // $('.notification-bar').delay(2000).slideDown().delay(3000).fadeOut();
+   
+     
+/**************
+* jQUeryy HIDE/SHOW
+***************** */
+    // $(function () { 
+         
+   //$('h1').hide();  
+  // $('div.hidden').show(); 
+         
+         
+    //faade in
+      //   $('div.hidden').hide(); 
+      //   $('p').fadeOut();
+   //  $('div.hidden').fadeIn(); 
+    
+         
+      //   $('#box1').click(function() {
+        //    $(this).fadeTo(1000, 0.25, function() {
+                // animation is complite
+                
+              //  $(this).slideUp();
+          //  }); 
+             
+             //   });
+         
+    //   $('div.hidden').slideDown();
+        
+        // $('button').click(function() {
+         //    $('#box1').slideToggle();
+         
+      //   })
+         
+//});
+
+
+/***************
+* jQuery Animate Method
+******************** */
+
+  $(function () { 
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
