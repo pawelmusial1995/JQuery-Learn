@@ -186,9 +186,7 @@
           'text-align': 'center', 
           'line-height': '140px',
           'height': '140px',
-          'width': '140px'}).addClass('circleShape');;
-     
-      
+          'width': '140px'}).addClass('circleShape');
   });
 
 
